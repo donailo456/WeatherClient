@@ -21,7 +21,7 @@ class ListTableVC: UITableViewController {
         refreshControl.addTarget(self, action: #selector(actionRefreshControl(sender:)), for: .valueChanged)
         return refreshControl
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.refreshControl = myRefreshControl
