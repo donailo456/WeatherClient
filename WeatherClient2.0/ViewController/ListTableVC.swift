@@ -33,6 +33,7 @@ class ListTableVC: UITableViewController {
         addCities()
     }
     
+    //MARK: - work Cities
     func addCities() {
         getCityWeather(citiesArray: self.namecitiesArray) { (index, weather) in
             self.citiesArray[index] = weather
@@ -44,7 +45,7 @@ class ListTableVC: UITableViewController {
             }
         }
     }
-    
+    //MARK: - Target
     @objc func actionRefreshControl(sender: UIRefreshControl) {
         sender.endRefreshing()
         

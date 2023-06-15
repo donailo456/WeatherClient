@@ -43,9 +43,7 @@ struct Weather {
         tempMin = weatherData.forecasts.first!.parts.day.tempMin!
         tempMax = weatherData.forecasts.first!.parts.day.tempMax!
     }
-    
     init() {
         
     }
-    
 }
